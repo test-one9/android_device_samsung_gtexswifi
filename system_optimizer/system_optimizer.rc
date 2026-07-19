@@ -1,0 +1,11 @@
+# System Optimizer init script
+on property:sys.boot_completed=1
+    start system_optimizer
+
+service system_optimizer /system/bin/system_optimizer
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:system_optimizer:s0
