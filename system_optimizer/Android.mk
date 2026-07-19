@@ -25,11 +25,3 @@ LOCAL_SRC_FILES := system_optimizer.rc
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
-
-# Helper script for manual optimization
-include $(CLEAR_VARS)
-LOCAL_MODULE := optimize_system.sh
-LOCAL_SRC_FILES := optimize_system.sh
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_PREBUILT)
